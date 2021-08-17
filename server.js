@@ -11,6 +11,6 @@ res.sendFile(path.join('dist/index.html'));
 });
 
 const server = http.createServer(app);
-const port = 5000;
-server.listen(port);
-console.debug('Matt...your server is listening on port ' + port);
+const PORT = process.env.PORT || 5000;
+server.listen(PORT);
+console.debug('Matt...your server is listening on port ' + PORT);
